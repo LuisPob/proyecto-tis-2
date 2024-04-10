@@ -2,7 +2,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 // returns the home page with all posts
-Route::get('/', PostController::class .'@index')->name('posts.index');
+Route::get('/', PostController::class .'@index')->name('home');
 // returns the form for adding a post
 Route::get('/posts/create', PostController::class . '@create')->name('posts.create');
 // adds a post to the database
@@ -15,3 +15,4 @@ Route::get('/posts/{post}/edit', PostController::class .'@edit')->name('posts.ed
 Route::put('/posts/{post}', PostController::class .'@update')->name('posts.update');
 // deletes a post
 Route::delete('/posts/{post}', PostController::class .'@destroy')->name('posts.destroy');
+

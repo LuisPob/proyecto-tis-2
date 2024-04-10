@@ -3,7 +3,7 @@
 @section('content')
   <nav class="navbar navbar-expand-lg navbar-light bg-warning">
     <div class="container-fluid">
-      <a class="navbar-brand h1" href={{ route('posts.index') }}>CRUDPosts</a>
+      <a class="navbar-brand h1" href={{ route('home') }}>CRUDPosts</a>
       <div class="justify-end ">
         <div class="col ">
           <a class="btn btn-sm btn-success" href={{ route('posts.create') }}>Add Post</a>
